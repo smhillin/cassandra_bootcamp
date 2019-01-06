@@ -148,3 +148,12 @@ sudo apt-get remove cassandra
 `
 sudo rm -rf /var/lib/cassandra && sudo rm -rf /var/log/cassandra && sudo rm -rf /etc/cassandra
 `
+
+Datacenter: us-west-2
+=====================
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address        Load       Tokens       Owns (effective)  Host ID                               Rack
+UN  172.31.29.158  185.9 KiB  256          67.3%             eaaa4c0d-59d5-4197-a450-40c40c534799  2a
+UN  172.31.25.233  160.39 KiB  256          63.6%             e16dcfdd-aa36-4745-b57b-c05ac3902173  2a
+UN  172.31.34.131  160.67 KiB  256          69.1%             3de3304b-ed6d-4873-8493-a10cdc497ab3  2b
