@@ -1,3 +1,10 @@
+# Create AWS Cassandra Cluster
+
+Requirements: 3 AWS EC2 t2.large in 3 different AZ.
+
+Perform the following steps on all 3 instances.
+
+
 ## Update and Upgrade each instance
 
 `
