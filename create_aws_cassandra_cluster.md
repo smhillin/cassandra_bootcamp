@@ -87,13 +87,13 @@ sudo rm cassandra.yaml
 
 ### Open cassandra.yaml in your favorite editor and edit below parameters as mentioned below
 
-cluster_name: ‘My Cluster’
-authenticator: PasswordAuthenticator (optional)
-seeds: “<node1_private_ip_address>,<node2_private_ip_address>,<node3_private_ip_address>”
-listen_address:<node_private_ip_address>
-rpc_address: 0.0.0.0
-broadcast_rpc_address:<node_private_ip_address>
-endpoint_snitch: Ec2Snitch
+    cluster_name: ‘My Cluster’
+    authenticator: PasswordAuthenticator (optional)
+    seeds: “<node1_private_ip_address>,<node2_private_ip_address>,<node3_private_ip_address>”
+    listen_address:<node_private_ip_address>
+    rpc_address: 0.0.0.0
+    broadcast_rpc_address:<node_private_ip_address>
+    endpoint_snitch: Ec2Snitch
 
 ### Save the file
 
