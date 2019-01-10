@@ -104,16 +104,26 @@
 
 ## You should see something like this result
 
+
   2019-01-10 17:28:49,778 [INFO] root: dropping existing keyspace...
-  2019-01-10 17:28:51,195 [INFO] root: creating keyspace...
-  2019-01-10 17:28:51,875 [INFO] root: setting keyspace...
-  2019-01-10 17:28:52,510 [INFO] root: Students Table Created !!!
-  2019-01-10 17:28:52,540 [INFO] root: Batch Insert Completed
-  (u'Shaun', u'Austin')
-  (u'Meghan', u'Toronto')
-  (u'Mohamed', u'San Francisco')
-  (u'Jamal', u'Chicago')
   
+  2019-01-10 17:28:51,195 [INFO] root: creating keyspace...
+  
+  2019-01-10 17:28:51,875 [INFO] root: setting keyspace...
+  
+  2019-01-10 17:28:52,510 [INFO] root: Students Table Created !!!
+  
+  2019-01-10 17:28:52,540 [INFO] root: Batch Insert Completed
+  
+  (u'Shaun', u'Austin')
+  
+  (u'Meghan', u'Toronto')
+  
+  (u'Mohamed', u'San Francisco')
+  
+  (u'Jamal', u'Chicago')
+ 
+ 
 ## Try to edit the code for the below scenario
 
 1.  Create a new table called "classes" and 
