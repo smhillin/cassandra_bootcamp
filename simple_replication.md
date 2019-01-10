@@ -1,5 +1,10 @@
 # Replication Factor on a Cassandra Cluster
 
+## Create CCM CLuster
+
+https://github.com/smhillin/cassandra_bootcamp/blob/master/ccm_install.md
+
+
 ## Start CQL CLI
 
   ccm node1 cqlsh
