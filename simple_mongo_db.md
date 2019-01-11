@@ -54,7 +54,19 @@ notice here no need for joins or multiple tables with foreign keys to represent 
 
   db.pets.find({owner:"Dushan")})
   
+## Update some data
+
+
+  db.pets.update(
+      { name: "Daisy"},
+      {
+          $set: { owner: "Shaun", status:"Crazy Chihuahua"}
+      }
+  )
+  
   db.pets.find({species:"rabbit"})
+  
+  db.pets.find({name:"Daisy"})
   
  notice that there is no primary key and queries can be made using any key
  
