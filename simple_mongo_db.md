@@ -21,18 +21,40 @@
  
 ## Create DB
 
-  use my_test
+  use friends
   
 ## Insert into Document
 
-  db.users.insert({name:"shaun", email:"shaun@natvz.io"})
+  db.friends.insert({name:"shaun", email:"shaun@natvz.io"})
   
-  db.users.insert({name:"nadia", email:"nadia@gmail.com", age: '45', nationality: 'American'})
+  db.friends.insert({name:"nadia", email:"nadia@gmail.com", age: '45', nationality: 'American'})
   
-  db.users.insert({name:"paul", email:"paul@gmail.com", age: '32', nationality: 'American', address: {street: '2304 vans way', city: 'Beaumont', state: 'Texas'})
+notice here that there is no need to create a collection and also columns can be created at runtime.  No need to create multiple 
+tables to 
   
-  notice here that there is no need to create a table and also columns can be created at runtime.
+## Insert into Document
+
+  db.friends.insert({name:"paul", email:"paul@gmail.com", age: '32', nationality: 'American', address: {street: '2304 vans way',   city: 'Beaumont', state: 'Texas'}})
+  
+notice here no need for joins or multiple tables with foreign keys to represent rich data structure with multi dimensionality.
   
 ## Return All Results from Table
 
   db.users.find()
+  
+
+## Create new table and write multiple entries
+
+  use pets
+  
+  db.pets.insertMany([
+    {name:"Daisy", owner:"Mila", species:"dog", sex:"F",birth:"2007-02-22"},
+    {name:"Miss Bunny", owner:"Biljana", species:"rabbit", sex:"F",birth:"2007-12-09"},
+    {name:"Clyde", owner:"Dushan", species:"rabbit", sex:"M",birth:"2016-04-29"}])
+
+  db.pets.find({owner:"Dushan")})
+  
+  db.pets.find({species:"rabbit"})
+  
+ notice that there is no primary key and queries can be made using any key
+ 
