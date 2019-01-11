@@ -1,3 +1,5 @@
+## Install and Start Mongo DB
+
   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
 
   sudo apt-get update
@@ -8,6 +10,7 @@
   sudo systemctl enable mongod
 
 ## Check ports in use
+
   netstat -plntu | grep 27017
 
 ## Check service status
