@@ -15,39 +15,62 @@
 
   netstat -plntu | grep 27017
 
+27017 is the default port used by Mongodb server to listen for connections. 
+
 ## Check service status
+
   sudo service mongod status
 
-27017 is the default port used by Mongodb server to listen for connections. 
+
 
 ## Run mongo shell
 
   mongo
  
-## Create DB
+## Create Collection
 
   use friends
   
-## Insert into Document
+## Insert into collection
 
   db.friends.insert({name:"shaun", email:"shaun@natvz.io"})
   
   db.friends.insert({name:"nadia", email:"nadia@gmail.com", age: '45', nationality: 'American'})
   
-#### notice here that there is no need to create a collection and also columns can be created at runtime.  No need to create multiple tables to 
+
   
+#### notice here that there is no need to define a schema because columns can be defined at runtime.  
+
+## Practice adding documents
+
+  1.  Add two 32 year old friends to the table that each have emails, age, nationality, and 2 other attributes.
+
+  2.  Try and add a friend to the collection who doesn't have a  name but has an email.
+
+  3.  Add a friend that has multiple email addresses?  How does this differ from RDBMS behavior?
+
+## View all entrys in the Collection
+
+  db.friends.find()
+ 
 ## Insert into Document
 
-  db.friends.insert({name:"paul", email:"paul@gmail.com", age: '32', nationality: 'American', address: {street: '2304 vans way',   city: 'Beaumont', state: 'Texas'}})
+  db.friends.insert({name:"paul", email: "paul@gmail.com", age: '32', nationality: 'American', address: {street: '2304 vans way',   city: 'Beaumont', state: 'Texas'}})
   
-#### notice here no need for joins or multiple tables with foreign keys to represent rich data structure with multi dimensionality.
-  
-## Return All Results from Table
+db.friends.find({name:"paul"}) 
 
-  db.users.find()
+
+  
+#### notice here no need for joins or multiple tables with foreign keys to represent rich nested data structure like the street address with multi dimensionality.
+  
+## Return All Friends from the Table with age=32
+
+  db.friends.find()
+  
+  db.friends.find({age:"32"})
   
 
-## Create new table and write multiple entries
+## Create new collection called pets and write multiple entries to the table
 
   use pets
   
@@ -58,7 +81,7 @@
         
   db.pets.find({owner:"Dushan")})
 
-## Update some data
+## Update some data and add a 
 
 
   db.pets.update(
@@ -68,9 +91,12 @@
       }
   )
   
-  db.pets.find({species:"rabbit"})
+## Practice
+
+Return all the rabbits in the table
+
+Return all the animals named Daisy
   
-  db.pets.find({name:"Daisy"})
   
  #### notice that there is no primary key and queries can be made using any key
  
