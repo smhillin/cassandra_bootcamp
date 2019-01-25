@@ -32,14 +32,13 @@
   
   db.friends.insert({name:"nadia", email:"nadia@gmail.com", age: '45', nationality: 'American'})
   
-notice here that there is no need to create a collection and also columns can be created at runtime.  No need to create multiple 
-tables to 
+#### notice here that there is no need to create a collection and also columns can be created at runtime.  No need to create multiple tables to 
   
 ## Insert into Document
 
   db.friends.insert({name:"paul", email:"paul@gmail.com", age: '32', nationality: 'American', address: {street: '2304 vans way',   city: 'Beaumont', state: 'Texas'}})
   
-notice here no need for joins or multiple tables with foreign keys to represent rich data structure with multi dimensionality.
+#### notice here no need for joins or multiple tables with foreign keys to represent rich data structure with multi dimensionality.
   
 ## Return All Results from Table
 
@@ -51,9 +50,10 @@ notice here no need for joins or multiple tables with foreign keys to represent 
   use pets
   
   db.pets.insertMany([  
-      {name:"Daisy", owner:"Mila", species:"dog", sex:"F",birth:"2007-02-22"},  
-      {name:"Miss Bunny", owner:"Biljana", species:"rabbit", sex:"F",birth:"2007-12-09"},  
-      {name:"Clyde", owner:"Dushan", species:"rabbit", sex:"M",birth:"2016-04-29"}])  
+        {name:"Daisy", owner:"Mila", species:"dog", sex:"F",birth:"2007-02-22"},  
+        {name:"Miss Bunny", owner:"Biljana", species:"rabbit", sex:"F",birth:"2007-12-09"},  
+        {name:"Clyde", owner:"Dushan", species:"rabbit", sex:"M",birth:"2016-04-29"}])  
+        
   db.pets.find({owner:"Dushan")})
 
 ## Update some data
@@ -70,5 +70,5 @@ notice here no need for joins or multiple tables with foreign keys to represent 
   
   db.pets.find({name:"Daisy"})
   
- notice that there is no primary key and queries can be made using any key
+ #### notice that there is no primary key and queries can be made using any key
  
