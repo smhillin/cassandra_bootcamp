@@ -54,7 +54,6 @@ notice here no need for joins or multiple tables with foreign keys to represent 
     {name:"Daisy", owner:"Mila", species:"dog", sex:"F",birth:"2007-02-22"},
     {name:"Miss Bunny", owner:"Biljana", species:"rabbit", sex:"F",birth:"2007-12-09"},
     {name:"Clyde", owner:"Dushan", species:"rabbit", sex:"M",birth:"2016-04-29"}])
-
   db.pets.find({owner:"Dushan")})
 '
 ## Update some data
