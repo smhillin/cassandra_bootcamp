@@ -47,7 +47,7 @@ notice here no need for joins or multiple tables with foreign keys to represent 
   
 
 ## Create new table and write multiple entries
-
+'
   use pets
   
   db.pets.insertMany([
@@ -56,7 +56,7 @@ notice here no need for joins or multiple tables with foreign keys to represent 
     {name:"Clyde", owner:"Dushan", species:"rabbit", sex:"M",birth:"2016-04-29"}])
 
   db.pets.find({owner:"Dushan")})
-  
+'
 ## Update some data
 
 
