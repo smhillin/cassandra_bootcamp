@@ -1,7 +1,9 @@
+--30 MIN----
+
 # Install Cassandra Cluster Manager(CCM) 
 
 Here you will install a virtualized Cassandra Multi Node Cluster on s single Ubuntu Machine.  This should
-only be used for testing and not in production.
+only be used for testing and not in production. 
 
 ## Install Neccesary Python Packages
 
@@ -9,11 +11,14 @@ only be used for testing and not in production.
 
   sudo apt-get install python-pip
 
-  sudo easy_install pyYaml
+  sudo apt update
 
+  sudo easy_install pyYaml
+  
   sudo easy_install six
 
   pip install cassandra-driver
+  (this step may take 10 minutes)
 
 ## Install Java-8
 
