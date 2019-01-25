@@ -6,7 +6,7 @@
 
   sudo apt-get install -y mongodb-org
 
-  sudo systemctl start mongod
+  sudo systemctl start mongod  
   sudo systemctl enable mongod
 
 ## Check ports in use
