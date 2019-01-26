@@ -1,5 +1,9 @@
 # Replication Factor on a Cassandra Cluster
 
+Task:  Create new keyspace and tables and insert rows and columns to tables.
+
+Objective: Learn how cassandra replication factor works and how partition key and cluster determine where and how data is stored.
+
 ## Create 4 Node CCM CLuster
 
 https://github.com/smhillin/cassandra_bootcamp/blob/master/ccm_install.md
