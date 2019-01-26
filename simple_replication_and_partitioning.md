@@ -138,5 +138,5 @@ Jot down each row that you inserted, and make note of what node they reside on. 
   ccm node3 json -k my_test_3 -c mates test; cat test;  
   ccm node4 json -k my_test_3 -c mates test; cat test;
 
-### Where is all the info residing?
+### On what nodes is each row residing? How do the partition key and clustering key determine where and how the data is stored?
 
