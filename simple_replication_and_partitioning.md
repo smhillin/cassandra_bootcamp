@@ -96,7 +96,7 @@ What is happening here?
   CREATE TABLE mates (first_name text , last_name text, PRIMARY KEY(first_name));
   
   INSERT INTO mates (first_name, last_name) VALUES ('John', 'Bonham');  
-'
+  
   INSERT INTO mates (first_name, last_name) VALUES ('John', 'Lennon');  
   
   INSERT INTO mates (first_name, last_name) VALUES ('Jimmy', 'Paige');  
