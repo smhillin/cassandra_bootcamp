@@ -131,7 +131,7 @@ What is happening here?
   
 ## Exit to CLI, FLUSH tables Examine Nodes for info
 
-Jot down each row that you inserted, and make note of what node they reside on. What is happening here?  Whats the replicaiton appear to be?
+Jot down each row that you inserted, and make note of what node they reside on. What is happening here?  Whats the replication appear to be?
 
   exit;
   
