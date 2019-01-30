@@ -17,7 +17,7 @@ Here pid generated a unique primary id for each player.
   
 ## Now try a filter query by team.  What happens?
 
-  SELECT team, name, age FROM player_mv WHERE team = 'Liverpool';
+  SELECT team, name, age FROM players_mv WHERE team = 'Liverpool';
 
 ## Create a materlized view for players by country.  
 
